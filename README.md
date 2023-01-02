@@ -56,13 +56,13 @@ yaml 头文件长这样:
 ```
 ---
 layout:     post
-title:      "Hello 2015"
-subtitle:   "Hello World, Hello Blog"
+title:      "标题"
+subtitle:   ""
 date:       2015-01-29 12:00:00
-author:     "Hux"
+author:     "代码"
 header-img: "img/pic.jpg"
 tags:
-    - Life
+    - 标签
 ---
 
 ```
