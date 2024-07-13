@@ -12,7 +12,7 @@ tags:
 
 本教程使用的Debian系统
 
-Google bbr当然是必不可少的，先开启它
+Google bbr当然是“必不可少”的，先开启它
 
 ```
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf && echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf && sysctl -p
