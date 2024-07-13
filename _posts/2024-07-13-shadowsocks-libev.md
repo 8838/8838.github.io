@@ -66,7 +66,7 @@ cat > /etc/shadowsocks-libev/config.json <<EOF
 {
     "server": "0.0.0.0",
     "server_port":9001,
-    "password":"密码",
+    "password":"8838.github.io",
     "timeout":300,
     "method":"aes-256-gcm",
     "fast_open":false,
@@ -75,8 +75,6 @@ cat > /etc/shadowsocks-libev/config.json <<EOF
 }
 EOF
 ```
-
-上方`密码`自己自定义了再敲入ssh
 
 启动容器
 
@@ -88,7 +86,7 @@ docker run -d -p 9001:9001 -p 9001:9001/udp --name ss-libev --restart=always -v 
 
 * 地址：你的ip
 * 端口：9001
-* 密码：你自定义的
+* 密码：8838.github.io
 * 算法：aes-256-gcm
 
 ## 常用命令
