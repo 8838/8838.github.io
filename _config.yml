@@ -1,11 +1,11 @@
 # Site settings
-title: 代码
-SEOTitle: 代码博客 | Code Blog
+title: 8838
+SEOTitle: 8838
 header-img: img/pic.jpg
-email: info@daima.eu.org
+email: i@moe.ms
 description: "Hello World"
-keyword: "代码, 代码博客, Code Blog, 翻墙, 教程, 梯子, vps, host, debian, linux, code, blog, v2ray, ssr, vpn, wordpress, typecho"
-url: "http://daima.eu.org" # your host, for absolute URL
+keyword: "翻墙, 教程, 梯子, vps, linux, v2ray, shadowsocks, vpn"
+url: "https://8838.github.io" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -90,7 +90,6 @@ page-mathjax: false
 # Friends
 friends:
   [
-    { title: "MOE", href: "https://www.moe.ms/" },
     { title: "谷歌", href: "https://www.google.com/" },
     { title: "必应", href: "https://www.bing.com/" },
   ]
