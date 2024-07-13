@@ -10,9 +10,9 @@ tags:
     - docker
 ---
 
-本教程由Debian系统搭建
+本教程使用的Debian系统
 
-bbr当然是必不可少的，先开启它
+Google bbr当然是必不可少的，先开启它
 
 ```
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf && echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf && sysctl -p
@@ -35,7 +35,7 @@ lsmod | grep bbr
 wget -qO- get.docker.com | bash
 ```
 
-开启docker
+启动docker
 
 ```
 systemctl start docker
@@ -59,7 +59,7 @@ docker pull teddysun/shadowsocks-libev:3.3.5
 mkdir -p /etc/shadowsocks-libev
 ```
 
-写入配置文件
+写入配置文件(↓整个复制)
 
 ```
 cat > /etc/shadowsocks-libev/config.json <<EOF
