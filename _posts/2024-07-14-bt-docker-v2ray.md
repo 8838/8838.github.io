@@ -106,7 +106,7 @@ docker run -d --network host --name v2ray --restart=always -v /etc/v2ray:/etc/v2
 
 保存，服务端搭建完成
 
-客户端配置参考：[传送](https://8838.github.io/2021/09/13/bt-v2ray/)
+客户端配置参考：[传送](https://8838.github.io/2021/09/13/bt-v2ray/#%E4%B8%8B%E9%9D%A2%E8%AF%B4ios%E5%B0%8F%E7%81%AB%E7%AE%AD%E9%85%8D%E7%BD%AE)
 
 -——
 
