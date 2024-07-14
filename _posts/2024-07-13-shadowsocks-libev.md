@@ -10,7 +10,7 @@ tags:
     - docker
 ---
 
-本教程使用的Debian系统
+本教程使用的Debian系统，适合新手，无脑敲命令就行
 
 安装docker
 
@@ -65,7 +65,7 @@ EOF
 docker run -d -p 9001:9001 -p 9001:9001/udp --name ss-libev --restart=always -v /etc/shadowsocks-libev:/etc/shadowsocks-libev teddysun/shadowsocks-libev:3.3.5
 ```
 
-你会得到一些东西
+搭建完成，你会得到一些东西
 
 * 地址：你的ip
 * 端口：9001
