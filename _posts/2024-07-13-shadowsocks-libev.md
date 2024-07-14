@@ -26,7 +26,6 @@ lsmod | grep bbr
 
 输出→`tcp_bbr 20480 1`类似值则成功开启了
 
-
 -——
 
 安装docker
@@ -88,6 +87,8 @@ docker run -d -p 9001:9001 -p 9001:9001/udp --name ss-libev --restart=always -v 
 * 端口：9001
 * 密码：8838.github.io
 * 算法：aes-256-gcm
+
+-——
 
 如果你想编辑配置文件(改密码啥的)
 
