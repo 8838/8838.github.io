@@ -80,7 +80,7 @@ docker run -d -p 9001:9001 -p 9001:9001/udp --name ss-libev --restart=always -v 
 nano /etc/shadowsocks-libev/config.json
 ```
 
-编辑完后`ctl+c`保存，`y`确认，`回车`退出
+编辑完后`ctl+x`保存，`y`确认，`回车`退出
 
 ## 常用命令
 
