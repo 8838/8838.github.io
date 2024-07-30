@@ -59,7 +59,7 @@ layout:     post
 title:      "标题"
 subtitle:   ""
 date:       2015-01-29 12:00:00
-author:     "代码"
+author:     "8838"
 header-img: "img/pic.jpg"
 tags:
     - 标签
