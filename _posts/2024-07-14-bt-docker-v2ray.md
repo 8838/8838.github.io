@@ -33,6 +33,7 @@ cat > /etc/v2ray/config.json <<EOF
   "inbounds": [
     {
       "port": 10000,
+      "listen":"127.0.0.1",
       "protocol": "vmess",
       "settings": {
         "clients": [
@@ -65,7 +66,7 @@ EOF
 启动容器
 
 ```
-docker run -d -p 10000:10000 -p 10000:10000/udp --name v2ray --restart=always -v /etc/v2ray:/etc/v2ray teddysun/v2ray:4.45.2
+docker run -d --network host --name v2ray --restart=always -v /etc/v2ray:/etc/v2ray teddysun/v2ray:4.45.2
 ```
 
 1,然后宝塔新建一个网站(域名是文章开头你解析的)，如下图所示（数据库，PHP都无所谓）
