@@ -54,7 +54,7 @@ cat > /etc/shadowsocks-libev/config.json <<EOF
     "method":"aes-256-gcm",
     "fast_open":false,
     "nameserver":"8.8.8.8",
-    "mode":"tcp_and_udp"
+    "mode":"tcp_only"
 }
 EOF
 ```
@@ -80,7 +80,7 @@ docker run -d -p 9001:9001 -p 9001:9001/udp --name ss-libev --restart=always -v 
 nano /etc/shadowsocks-libev/config.json
 ```
 
-编辑完后`ctl+x`保存，`y`确认，`回车`退出
+编辑完后`ctl+x`保存，`y`确认，`回车`退出，记得重启容器↓
 
 ## 常用命令
 
@@ -88,6 +88,12 @@ nano /etc/shadowsocks-libev/config.json
 
 ```
 docker restart ss-libev
+```
+
+启动容器
+
+```
+docker start ss-libev
 ```
 
 停止容器
