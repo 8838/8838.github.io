@@ -47,13 +47,12 @@ mkdir -p /etc/shadowsocks-libev
 ```
 cat > /etc/shadowsocks-libev/config.json <<EOF
 {
-    "server": "0.0.0.0",
+    "server":["[::0]", "0.0.0.0"],
     "server_port":9001,
     "password":"8838.github.io",
     "timeout":300,
     "method":"aes-256-gcm",
     "fast_open":false,
-    "nameserver":"8.8.8.8",
     "mode":"tcp_only"
 }
 EOF
@@ -62,7 +61,7 @@ EOF
 启动容器
 
 ```
-docker run -d -p 9001:9001 -p 9001:9001/udp --name ss-libev --restart=always -v /etc/shadowsocks-libev:/etc/shadowsocks-libev teddysun/shadowsocks-libev:3.3.5
+docker run -d -p 9001:9001 --name ss-libev --restart=always -v /etc/shadowsocks-libev:/etc/shadowsocks-libev teddysun/shadowsocks-libev:3.3.5
 ```
 
 搭建完成，你会得到一些东西
